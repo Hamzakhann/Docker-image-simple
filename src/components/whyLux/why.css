@@ -1,0 +1,59 @@
+
+   .whylux-container {
+    height: auto;
+    background: linear-gradient(134deg, #6a53878f 0%, #6a5387b0 100%) ,url('../../assets/why-choose-bg.jpeg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+  }
+  .primary-sec-heading{
+    margin-top: 20px;
+    color: #6D558A;
+    text-align: center;
+    font-size: 40px;
+    font-weight: bolder;
+  }
+
+  .primary-sec-heading::first-letter{
+    font-size: 80px;
+  }
+
+  .why-card{
+    box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, 0.1) !important;
+    border-radius: 0.5rem !important;
+    transition: all 0.3s ease !important;
+    cursor: pointer;
+  }
+
+  .why-card:hover{
+      box-shadow: 5px 5px 25px 0px rgba(46, 61, 73, 0.2) !important;
+    }
+  .why-icon-box{
+    position: relative;
+    top: -20px;
+    left: -30px;
+    box-shadow: 10px 10px 25px 0 rgba(0, 0, 0, 0.1);
+    background: #fff;
+    width: 3.875rem;
+    height: 3.875rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .why-icon-box > i{
+    color: #6a5387;
+    font-weight: bolder;
+    font-size: 20px;
+  }
+
+  .why-card-header{
+    background-image: url('../../assets/bg.jpg');
+    background-size: cover;
+  }
+  .why-card-body{
+    background-color: white !important;
+    height: 75px !important;
+    text-align: center !important;
+  }
