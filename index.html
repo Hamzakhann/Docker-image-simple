@@ -1,139 +1,21 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
-  <style>
-    table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;	
-}
-
-td, th {
-    border: 1px solid #dddddd;
-    text-align: center;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: #dddddd;
-}
-
-h2 {
-	text-align:center;
-}
-
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <title>Docker simple</title>
 </head>
-
 <body>
-  <!-- AUdio tages for different voices -->
+  <h1>
+    Hello Friends
+  </h1>
+  <img id="img" class="img-tea" src="./tea.jpg" />
+  <button id="btnChange" >
+    Click If you hate tea
+  </button>
 
-  <audio id="birds">
-    <source src="birds.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-  <audio id="lion">
-    <source src="lion.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-  <audio id="dolphin">
-    <source src="dolphin.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-  <audio id="swan">
-    <source src="swan.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
-
-
-  <h2>Magic Sound</h2>
-
-  <table>
-
-    <tr>
-
-    <tr>
-      <th>Things </th>
-      <th>Start </th>
-      <th>Picture </th>
-      <th>Pause </th>
-    </tr>
-
-    <tr>
-      <td>Birds </td>
-      <td><button id="birds_button_play" type="button">Play Audio</button> </td>
-      <td> <img src="1.jpeg" alt="Birds" width="150" height="150"> </td>
-      <td><button id="birds_button_pause" type="button">Pause Audio</button> </td>
-    </tr>
-
-
-
-    <tr>
-      <td>Lion </td>
-      <td><button id="lion_button_play" type="button">Play Audio</button> </td>
-      <td> <img src="2.jpg" alt="Lion" width="150" height="150"> </td>
-      <td><button id="lion_button_pause" type="button">Pause Audio</button> </td>
-    </tr>
-
-    <tr>
-      <td> Dolphin</td>
-      <td><button id="dolphin_button_play" type="button">Play Audio</button> </td>
-      <td> <img src="3.jpg" alt=" Dolphin" width="150" height="150"> </td>
-      <td><button id="dolphin_button_pause" type="button">Pause Audio</button> </td>
-    </tr>
-
-    <tr>
-      <td>Swan</td>
-      <td><button id="swan_button_play" type="button">Play Audio</button> </td>
-      <td> <img src="4.jpg" alt="swan" width="150" height="150"> </td>
-      <td><button id="swan_button_pause" type="button">Pause Audio</button> </td>
-    </tr>
-
-  </table>
-
-  <script>
-    //GET audio by id
-    let birds = document.getElementById('birds');
-    let lion = document.getElementById('lion');
-    let dolphin = document.getElementById('dolphin');
-    let swan = document.getElementById('swan');
-
-
-
-    // GET button to play the music
-    document.getElementById('birds_button_play').addEventListener('click', () => {
-      birds.play()
-    })
-    document.getElementById('lion_button_play').addEventListener('click', () => {
-      lion.play()
-    })
-    document.getElementById('dolphin_button_play').addEventListener('click', () => {
-      dolphin.play()
-    })
-    document.getElementById('swan_button_play').addEventListener('click', () => {
-      swan.play()
-    })
-
-
-    //GET button to pause the music
-    document.getElementById('birds_button_pause').addEventListener('click', () => {
-      birds.pause()
-    })
-    document.getElementById('lion_button_pause').addEventListener('click', () => {
-      lion.pause()
-    })
-    document.getElementById('dolphin_button_pause').addEventListener('click', () => {
-      dolphin.pause()
-    })
-    document.getElementById('swan_button_pause').addEventListener('click', () => {
-      swan.pause()
-    })
-
-  </script>
+  <script src="./index.js" ></script>
 </body>
-
 </html>
